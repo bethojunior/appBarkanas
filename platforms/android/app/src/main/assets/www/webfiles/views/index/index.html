@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href="../../css/font/montserrat.css" rel="stylesheet">
+        <link href="../../css/assets.css" rel="stylesheet">
+        <link href="../../Materialize/css/materialize.css" rel="stylesheet">
+        <link href="../../css/navFeed.css" rel="stylesheet">
+        <link href="../../css/feed.css" rel="stylesheet">
+        <link href="../../css/pedidos.css" rel="stylesheet">
+        <link href="../../css/icons/icon.css" rel="stylesheet">
+
+        <script src="../../js/libs/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../../../cordova.js"></script>
+        <script src="../../Materialize/js/materialize.min.js"></script>
+        <script src="../../js/ultils/host.js"></script>
+        <script src="../../js/ultils/Preloader.js"></script>
+        <script src="../../js/ultils/ConnectServer.js"></script>
+    </head>
+
+    <body onload="initLoad()">
+        <div id='preloadPadrao'>
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                    <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div w3-include-html="container.html"></div>
+        <script src="../../js/ultils/import-html-w3.js"></script>
+        <script>
+            w3.includeHTML();
+            $(".button-collapse").sideNav();
+        </script>
+
+        
+        <script src="../../js/ultils/sweetalert.min.js"></script>
+        <script src="../../js/ultils/global.js"></script>
+        <script src='../../js/modulos/feed.js'></script>
+
+        <script src="../../js/controller/UserController.js"></script>
+        <script src="../../js/controller/FeedController.js"></script>
+        <script src="../../js/controller/RequestController.js"></script>
+
+        <script src="../../js/modulos/user.js"></script>
+        <script src='../../js/modulos/container.js'></script>
+        <script src='../../js/modulos/request.js'></script>
+        
+    </body>
+</html>

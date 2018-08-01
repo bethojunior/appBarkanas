@@ -1,0 +1,9 @@
+.mT-15 #itemsRequest .listPedidos {
+    padding: 2vw;
+    height: auto;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.26);
+    width: 90%;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}

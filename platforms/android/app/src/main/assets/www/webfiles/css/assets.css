@@ -1,0 +1,41 @@
+#preloadPadrao{
+    display: none;
+    position: absolute;
+    margin-left: 42vw;
+    margin-top: 60vw;
+}
+.fixedFooter{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.feed {
+    margin-top: 12vw;
+}
+.f1 {
+    font-size: 5vw;
+}
+.f2 {
+    font-size: 4vw;
+}
+.f3{
+    font-size: 3vw;
+}
+.f4{
+    font-size: 2vw;
+}
+.f5{
+    font-size: 1vw;
+}
+.fB{
+    font-weight: bold;
+}
+.upperCase{
+    text-transform: uppercase;
+}
+.mT-15{
+    margin-top: 15vw;
+}
+.backRed{
+    color: red;
+}

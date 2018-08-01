@@ -1,0 +1,35 @@
+.feed {
+    font-family: "Montserrat";
+}
+.feed .row .col.s12 .divShowProducts{
+    width: 100%; 
+    margin-top: 3vw;
+    padding: 2vw;
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.26);
+    border-radius: 10px 0px 10px 0px;
+}
+.feed .row .col.s12 .divShowProducts .nameProduct{
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 4vw;
+    width: auto;
+    word-wrap: break-word;
+}
+.feed .row .col.s12 .divShowProducts .descricaoProduct{
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+.feed .row .col.s12 .divShowProducts .valueProduct{
+    
+}
+.feed .imgModal{
+    width: 100%;
+}
+.feed .titleProduct{
+    font-size: 5vw;
+    text-align: center;
+}
+.feed .aboutProduct{
+    font-size: 4vw;
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: #65171B;  
+}
+.row .col.s12.divForm input{
+    text-align: center;
+    color: white;
+}
+.row .col.s12.divForm .btn {
+    background-color: #65171B;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.26);
+}
+.row .col.s12.divForm a{
+    text-align: center;
+    color: white;
+}
