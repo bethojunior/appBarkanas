@@ -1,0 +1,9 @@
+body{
+    background-color: brown;
+}
+#preloadUser{
+    display: none;
+    position: absolute;
+    margin-top: 50vw;
+    margin-left: 42vw;
+}
