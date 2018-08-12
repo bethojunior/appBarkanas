@@ -1,13 +1,14 @@
 lenghtRequest = 0;
-
+valorFixed    = 0;
 //add product on the list request for user aprove
 function addProductInListRequest(){
     valueTotal = parseFloat(valueProduct) + valueTotal;
+    console.log(valorFixed);
     let itemsSelected = "";
     let priceProduct = 0;
 
     for(let i in requestProducts){
-        console.log(valueTotal);
+        console.log(requestProducts);
         itemsSelected += `
             <div class='col s12 listPedidos'>
                 <img class='col s4' src='${PATHIMAGE+requestProducts[i][3]}'>
@@ -19,13 +20,34 @@ function addProductInListRequest(){
                 </div>
                 <span class='col s2'>
                     R$${numberToReal(requestProducts[i][2])}
+                    <br>
+                    <i class="material-icons deleteProduct" cash='${requestProducts[i][2]}' value='${requestProducts[i][0]}'>remove</i>
                 </span>
             </div>
 
         `;
     }
-    document.getElementById("amountRequest").innerHTML = "R$"+ numberToReal(valueTotal);
+    valorT = valueTotal - valorFixed;
+    document.getElementById("amountRequest").innerHTML = "R$"+ numberToReal(valorT);
     document.getElementById("itemsRequest").innerHTML = itemsSelected;
+    
+    for(let i in document.getElementsByClassName("deleteProduct")){
+        document.getElementsByClassName("deleteProduct")[i].onclick = function(){
+            let click = this.getAttribute("value");
+            let indice;
+            let valor = parseFloat(this.getAttribute("cash"));
+            valorFixed = valorFixed + parseFloat(this.getAttribute("cash"));
+            for(let i in requestProducts){
+              if(requestProducts[i] == click){
+                indice = i;
+              }
+            }
+            document.getElementById("amountRequest").innerHTML = "R$"+ numberToReal(valueTotal);
+            requestProducts.splice(indice, 1);
+            addProductInListRequest();
+            
+        }
+    }
 }
 
 //finish request and send for establishment
@@ -50,7 +72,6 @@ function finishRequest(){
     swal("","Você não possui nada em seu carrinho","info");
     
 }
-
 //get all request if don't finish
 function getRequestWait(){
     let txt = "";
